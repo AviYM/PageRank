@@ -1,9 +1,6 @@
 from collections import Counter
 import sys
 
-
-# import results
-
 def urls_out_links_counter(listOfPairs):
     """
     Counts the out-links number of each page into a dictionary that maps a URL to its out-links number.
