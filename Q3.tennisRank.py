@@ -36,7 +36,7 @@ def is_diff_lt_epsilon(dict1, dict2):
     return True
 
 
-def tennisRank(listOfPairs, numIters):
+def pageRank(listOfPairs, numIters):
     """
     The function will use iterative update rules to compute a PageRank Score for each URL page.
     :param listOfPairs: list of pairs(also list). each pair [src, dest] is a link from page 'src' to page 'dest'.
@@ -91,7 +91,10 @@ def tennisRank(listOfPairs, numIters):
 
 
 ################## Main ##################
-# l = [
+
+# 'links' is a list of pairs. each pair [src, dest] is a link from page 'src' to page 'dest'.
+
+# links = [
 #     ["abc", "def"],
 #     ["abc", "ghi"],
 #     ["def", "jkl"],
@@ -100,7 +103,7 @@ def tennisRank(listOfPairs, numIters):
 #     ["mnop", "def"],
 #     ["mnop", "ghi"]
 # ]
-#
+
 # links = [
 #     ['https://en.wikipedia.org/wiki/Feliciano_L%C3%B3pez', 'https://en.wikipedia.org/wiki/Marc_L%C3%B3pez'],
 #     ['https://en.wikipedia.org/wiki/Bob_Bryan', 'https://en.wikipedia.org/wiki/Feliciano_L%C3%B3pez'],
@@ -172,6 +175,6 @@ def tennisRank(listOfPairs, numIters):
 #     ['https://en.wikipedia.org/wiki/Vera_Zvonareva', 'https://en.wikipedia.org/wiki/Laura_Siegemund']
 # ]
 #
-# final_scores = tennisRank(links, 100)
+# final_scores = pageRank(links, 100)
 # max = max(list(final_scores.values()))
 # print(max, [url for url in final_scores.keys() if final_scores[url] == max])
